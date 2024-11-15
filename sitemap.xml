@@ -10,14 +10,21 @@
   
   <url>
     <loc>https://ZonesTissyc.github.io/</loc>
-    <lastmod>2024-11-02T18:26:18+08:00</lastmod>
+    <lastmod>2024-11-14T21:34:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ZonesTissyc.github.io/post/m/</loc>
+    <lastmod>2024-11-14T21:34:06+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://ZonesTissyc.github.io/post/</loc>
-    <lastmod>2024-11-02T18:26:18+08:00</lastmod>
+    <lastmod>2024-11-14T21:34:06+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
