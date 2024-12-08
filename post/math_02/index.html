@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="olOwOlo" /><meta name="description" content="有理函数的积分 积分的定义 设$f(x)$是定义在$D$上的函数，若存在$F(x)$，使得$f(x)$在$D$上的任一开区间上都有定义，且$F(" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="olOwOlo" /><meta name="description" content="有理函数的积分 什么是有理函数 设$f(x)$是定义在$D$上的函数，若存在$F(x)$，使得$f(x)$在$D$上的任一开区间上都有定义，且$" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -40,19 +40,19 @@
 
 
 <meta property="og:title" content="Math" />
-<meta property="og:description" content="有理函数的积分 积分的定义 设$f(x)$是定义在$D$上的函数，若存在$F(x)$，使得$f(x)$在$D$上的任一开区间上都有定义，且$F(" />
+<meta property="og:description" content="有理函数的积分 什么是有理函数 设$f(x)$是定义在$D$上的函数，若存在$F(x)$，使得$f(x)$在$D$上的任一开区间上都有定义，且$" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ZonesTissyc.github.io/post/math_02/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2024-12-06T20:51:30+08:00" />
 <meta property="article:modified_time" content="2024-12-06T20:51:30+08:00" />
 
 <meta itemprop="name" content="Math">
-<meta itemprop="description" content="有理函数的积分 积分的定义 设$f(x)$是定义在$D$上的函数，若存在$F(x)$，使得$f(x)$在$D$上的任一开区间上都有定义，且$F("><meta itemprop="datePublished" content="2024-12-06T20:51:30+08:00" />
+<meta itemprop="description" content="有理函数的积分 什么是有理函数 设$f(x)$是定义在$D$上的函数，若存在$F(x)$，使得$f(x)$在$D$上的任一开区间上都有定义，且$"><meta itemprop="datePublished" content="2024-12-06T20:51:30+08:00" />
 <meta itemprop="dateModified" content="2024-12-06T20:51:30+08:00" />
-<meta itemprop="wordCount" content="751">
+<meta itemprop="wordCount" content="1153">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Math"/>
-<meta name="twitter:description" content="有理函数的积分 积分的定义 设$f(x)$是定义在$D$上的函数，若存在$F(x)$，使得$f(x)$在$D$上的任一开区间上都有定义，且$F("/>
+<meta name="twitter:description" content="有理函数的积分 什么是有理函数 设$f(x)$是定义在$D$上的函数，若存在$F(x)$，使得$f(x)$在$D$上的任一开区间上都有定义，且$"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -170,16 +170,14 @@ code.has-jax {
   <ul>
     <li><a href="#有理函数的积分">有理函数的积分</a>
       <ul>
-        <li>
-          <ul>
-            <li></li>
-          </ul>
-        </li>
+        <li><a href="#什么是有理函数">什么是有理函数</a></li>
         <li><a href="#有理函数的积分方法">有理函数的积分方法</a>
           <ul>
             <li><a href="#p0-q0的类型">p=0, q&gt;0的类型</a></li>
           </ul>
         </li>
+        <li><a href="#p1-q1的类型">p=1, q&gt;1的类型</a></li>
+        <li><a href="#pq2的类型">p=q=2的类型</a></li>
       </ul>
     </li>
   </ul>
@@ -188,21 +186,13 @@ code.has-jax {
 </div>
     <div class="post-content">
       <h1 id="有理函数的积分">有理函数的积分</h1>
-<h4 id="积分的定义">积分的定义</h4>
+<h2 id="什么是有理函数">什么是有理函数</h2>
 <p>设$f(x)$是定义在$D$上的函数，若存在$F(x)$，使得$f(x)$在$D$上的任一开区间上都有定义，且$F(x)$在$D$上连续，则称$F(x)$为$f(x)$的原函数，记作$F(x)=f(x)+C$，其中$C$是任意常数。</p>
-<h4 id="有理函数的定义">有理函数的定义</h4>
-<p>对于一个有理函数$f(x)$，若$f(x)$可以表示为以下形式：
+<p><strong>对于一个函数$f(x)$，若$f(x)$可以表示为以下形式：</strong>
 $$
 f(x)=\frac{P(x)}{Q(x)}
 $$
-其中$P(x)$和$Q(x)$是两个多项式函数，且$Q(x)$的最高次项系数不为0，则称$f(x)$为有理函数。</p>
-<h4 id="有理函数的积分-1">有理函数的积分</h4>
-<p>对于一个有理函数$f(x)$，其积分可以表示为以下形式：
-$$
-\int f(x)dx=\frac{P(x)}{Q(x)}+C
-$$
-其中$C$是任意常数。</p>
-<hr>
+其中$P(x)$和$Q(x)$是两个<em>多项式</em>函数，且$Q(x)$的最高次项系数不为0，则称$f(x)$为有理函数。</p>
 <h2 id="有理函数的积分方法">有理函数的积分方法</h2>
 <p>接下来逐级讨论不同复杂度的积分方法。这里设$P(x)$的最高次项为$p$，$Q(x)$的最高次项为$q$。</p>
 <h3 id="p0-q0的类型">p=0, q&gt;0的类型</h3>
@@ -226,8 +216,8 @@ $$
 将x升高次数，令q=2</p>
 </li>
 <li>
-<p>$$\int \frac{1}{x^2+3}dx$$</p>
-<p>此类型分母可以写成 $(x-c)^2 \pm a^2$的形式。</p>
+<p>$$\int \frac{1}{x^2+3}dx$$
+此类型分母可以写成 $(x-c)^2 \pm a^2$的形式。</p>
 <p>如为$x^2+a^2$,</p>
 <p>$$
 \int \frac{1}{x^2+a^2} dx = \frac{1}{a} \arctan (\frac{x}{a}) +C
@@ -266,9 +256,55 @@ $$
 $$
 再用$3.$与$4.$的方法进一步求出积分</p>
 </li>
+</ol>
+<hr>
+<h2 id="p1-q1的类型">p=1, q&gt;1的类型</h2>
+<ol>
 <li>
-<p>$$\int \frac{ax+c}{x^2+px+q}dx$$
-此类</p>
+<p>$$\int \frac{3x}{x^2+3x+4}dx$$
+此类分母的的一次项系数与常数项不为0，即$\frac{ax+c}{x^2+px+q}$型，且有$p^2-4aq&lt;0$。此时分母在实数范围内无法写成$(x-a)(x-b)$的形式。我们称此时分母最简。</p>
+<p>对于本题，不妨设$u=x^2+3x+4$,$du = 2x+3$
+分子$$3x=\frac{3}{2}[(2x+3)-\frac{9}{2}]$$
+$$
+I = \frac{3}{2}(\int \frac{2x+3}{x^2+3x+4}dx - \frac{9}{2} \int \frac{1}{x^+3x+4}dx)
+$$
+再用上述方法进一步求积分。</p>
+</li>
+<li>
+<p>$$\int \frac{3x}{x^2+3x-4}dx$$</p>
+<p>此类分母的的一次项系数与常数项不为0，即$\frac{ax+c}{x^2+px+q}$型，且有$p^2-4aq&gt;0$。此时分母在实数范围内可以写成$(x-a)(x-b)$的形式。</p>
+<p>将分母化为$(x+4)(x-1)$</p>
+<p>$$
+I = \frac{3}{5} (\ln |\frac{x-1}{x+4}|) +C
+$$
+当然，也可以用$1.$的方法进一步求积分。</p>
+</li>
+<li>
+<p>$$\int \frac{3x+3}{x^2+3x+4}dx$$</p>
+<p>分子有常数项，可以用$1.$和$2.$的思路。</p>
+<p>到现在，形如$$\int \frac{ax+c}{x^2+px+q}dx$$
+的积分可以求</p>
+</li>
+</ol>
+<hr>
+<h2 id="pq2的类型">p=q=2的类型</h2>
+<ol>
+<li>
+<p>$$\int \frac{3x^2+3x}{x^2+3x+4}dx$$
+分子和分母最高次均为2，可以将分母为基准进行参变分离。</p>
+<p>本题可化为，</p>
+<p>$$
+\begin{split}
+I &amp;= \int \frac{3(x^2+3x+4)-6x-12}{x^2+3x+4} dx
+\
+&amp;= 3 \int dx - \int \frac{6x+12}{x^2+3x+4}dx
+\end{split}
+$$</p>
+<p>因此，形如，
+$$
+\int \frac{ax^2+bx+c}{x^2+px+q}dx
+$$
+的积分可求。</p>
 </li>
 </ol>
 
