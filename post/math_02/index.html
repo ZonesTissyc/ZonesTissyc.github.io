@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Math - Even - A super concise theme for Hugo</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="olOwOlo" /><meta name="description" content="有理函数的积分 积分的定义 设$f(x)$是定义在$D$上的函数，若存在$F(x)$，使得$f(x)$在$D$上的任一开区间上都有定义，且$F(" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.89.3 with theme even" />
+
+
+<link rel="canonical" href="https://ZonesTissyc.github.io/post/math_02/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.154ed883776547b0e136be39b3037f61350da06f888d0868d1756a9463cd9520.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Math" />
+<meta property="og:description" content="有理函数的积分 积分的定义 设$f(x)$是定义在$D$上的函数，若存在$F(x)$，使得$f(x)$在$D$上的任一开区间上都有定义，且$F(" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ZonesTissyc.github.io/post/math_02/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2024-12-06T20:51:30+08:00" />
+<meta property="article:modified_time" content="2024-12-06T20:51:30+08:00" />
+
+<meta itemprop="name" content="Math">
+<meta itemprop="description" content="有理函数的积分 积分的定义 设$f(x)$是定义在$D$上的函数，若存在$F(x)$，使得$f(x)$在$D$上的任一开区间上都有定义，且$F("><meta itemprop="datePublished" content="2024-12-06T20:51:30+08:00" />
+<meta itemprop="dateModified" content="2024-12-06T20:51:30+08:00" />
+<meta itemprop="wordCount" content="751">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Math"/>
+<meta name="twitter:description" content="有理函数的积分 积分的定义 设$f(x)$是定义在$D$上的函数，若存在$F(x)$，使得$f(x)$在$D$上的任一开区间上都有定义，且$F("/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript"
+        async
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Even</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Even</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Math</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2024-12-06 </span>
+        
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#有理函数的积分">有理函数的积分</a>
+      <ul>
+        <li>
+          <ul>
+            <li></li>
+          </ul>
+        </li>
+        <li><a href="#有理函数的积分方法">有理函数的积分方法</a>
+          <ul>
+            <li><a href="#p0-q0的类型">p=0, q&gt;0的类型</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="有理函数的积分">有理函数的积分</h1>
+<h4 id="积分的定义">积分的定义</h4>
+<p>设$f(x)$是定义在$D$上的函数，若存在$F(x)$，使得$f(x)$在$D$上的任一开区间上都有定义，且$F(x)$在$D$上连续，则称$F(x)$为$f(x)$的原函数，记作$F(x)=f(x)+C$，其中$C$是任意常数。</p>
+<h4 id="有理函数的定义">有理函数的定义</h4>
+<p>对于一个有理函数$f(x)$，若$f(x)$可以表示为以下形式：
+$$
+f(x)=\frac{P(x)}{Q(x)}
+$$
+其中$P(x)$和$Q(x)$是两个多项式函数，且$Q(x)$的最高次项系数不为0，则称$f(x)$为有理函数。</p>
+<h4 id="有理函数的积分-1">有理函数的积分</h4>
+<p>对于一个有理函数$f(x)$，其积分可以表示为以下形式：
+$$
+\int f(x)dx=\frac{P(x)}{Q(x)}+C
+$$
+其中$C$是任意常数。</p>
+<hr>
+<h2 id="有理函数的积分方法">有理函数的积分方法</h2>
+<p>接下来逐级讨论不同复杂度的积分方法。这里设$P(x)$的最高次项为$p$，$Q(x)$的最高次项为$q$。</p>
+<h3 id="p0-q0的类型">p=0, q&gt;0的类型</h3>
+<ol>
+<li>
+<p>$$\int \frac{1}{x}dx$$</p>
+</li>
+<li>
+<p>$$\int \frac{1}{x+3}dx$$</p>
+<p>此类型可直接找出原函数，如(2)为 $ln|x+3|+C$。</p>
+<p>类似的，
+$$
+\int \frac{1}{1+x^2} dx= \frac{1}{2} \arctan x +C,
+$$
+$$
+\int \frac{1}{x^q}dx = \frac{x^{1-q}}{1-q} +C
+$$
+$$
+\int \frac{1}{ax+b} dx = \frac{1}{a} \ln |x+\frac{b}{a}| +C
+$$
+将x升高次数，令q=2</p>
+</li>
+<li>
+<p>$$\int \frac{1}{x^2+3}dx$$</p>
+<p>此类型分母可以写成 $(x-c)^2 \pm a^2$的形式。</p>
+<p>如为$x^2+a^2$,</p>
+<p>$$
+\int \frac{1}{x^2+a^2} dx = \frac{1}{a} \arctan (\frac{x}{a}) +C
+$$</p>
+</li>
+<li>
+<p>$$\int \frac{1}{x^2-3} dx$$
+该题与题$3$一样，不过分母变为$x^2-(\sqrt{3})^2$,</p>
+<p>如果分母为$x^2-a^2$,</p>
+<p>$$
+\int \frac{1}{x^2-a^2} dx = \frac{1}{2a} \int (\frac{1}{x-a}-\frac{1}{x+a}) dx =  \frac{1}{2a} \ln \mid \frac{x-a}{x+a} \mid +C
+$$</p>
+</li>
+<li>
+<p>$$\int \frac{1}{x^2-5x}dx$$
+此类分母的二次方程常数为$0$，一次项系数不为$0$，即$\frac{1}{x^2+bx}$型
+将分母化为$x(x+b)$
+即得，
+$$
+\int \frac{1}{x^2+bx} dx = \frac{1}{b} \int (\frac{1}{x}-\frac{1}{x+b})dx = \frac{1}{b} \ln \mid \frac{x}{x+b} \mid +C
+$$</p>
+</li>
+<li>
+<p>$$\int \frac{1}{x^2+3x+2}dx$$
+此类分母的二次方程常数为$0$，一次项系数不为$0$，即$\frac{1}{x^2+bx}$型难以将分母化为上面的形式。
+需将分母化为$(x-c)^2 \pm a^2$的形式
+对于本题，不妨设
+$$(x-c)^2+A = x^2+3x+2$$
+解得，
+$$
+\left{\begin{matrix} c=-\frac{3}{2} \A=-\frac{1}{4}\end{matrix}\right.
+$$
+原式
+$$
+= \int \frac{1}{(x+\frac{3}{2})^2-(\frac{1}{2})^2}dx
+$$
+再用$3.$与$4.$的方法进一步求出积分</p>
+</li>
+<li>
+<p>$$\int \frac{ax+c}{x^2+px+q}dx$$
+此类</p>
+</li>
+</ol>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">olOwOlo</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2024-12-06
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/math_01/">
+            <span class="next-text nav-default">M</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://localhost:1313" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="http://localhost:1313" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="http://localhost:1313" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="http://localhost:1313" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="http://localhost:1313" class="iconfont icon-google" title="google"></a>
+      <a href="http://localhost:1313" class="iconfont icon-github" title="github"></a>
+      <a href="http://localhost:1313" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="http://localhost:1313" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="http://localhost:1313" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="http://localhost:1313" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="http://localhost:1313" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://ZonesTissyc.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2024<span class="heart"><i class="iconfont icon-heart"></i></span><span>olOwOlo</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
