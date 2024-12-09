@@ -49,7 +49,7 @@
 <meta itemprop="name" content="Math">
 <meta itemprop="description" content="有理函数的积分 什么是有理函数 设$f(x)$是定义在$D$上的函数，若存在$F(x)$，使得$f(x)$在$D$上的任一开区间上都有定义，且$"><meta itemprop="datePublished" content="2024-12-06T20:51:30+08:00" />
 <meta itemprop="dateModified" content="2024-12-06T20:51:30+08:00" />
-<meta itemprop="wordCount" content="1153">
+<meta itemprop="wordCount" content="1535">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Math"/>
 <meta name="twitter:description" content="有理函数的积分 什么是有理函数 设$f(x)$是定义在$D$上的函数，若存在$F(x)$，使得$f(x)$在$D$上的任一开区间上都有定义，且$"/>
@@ -178,6 +178,9 @@ code.has-jax {
         </li>
         <li><a href="#p1-q1的类型">p=1, q&gt;1的类型</a></li>
         <li><a href="#pq2的类型">p=q=2的类型</a></li>
+        <li><a href="#qp2的类型">q&gt;p&gt;2的类型</a></li>
+        <li><a href="#pq2的类型-1">p&gt;q=2的类型</a></li>
+        <li><a href="#分母低次幂积型">分母低次幂积型</a></li>
       </ul>
     </li>
   </ul>
@@ -212,8 +215,8 @@ $$
 $$
 $$
 \int \frac{1}{ax+b} dx = \frac{1}{a} \ln |x+\frac{b}{a}| +C
-$$
-将x升高次数，令q=2</p>
+$$</p>
+<p>将x升高次数，令q=2</p>
 </li>
 <li>
 <p>$$\int \frac{1}{x^2+3}dx$$
@@ -283,7 +286,7 @@ $$
 <p>$$\int \frac{3x+3}{x^2+3x+4}dx$$</p>
 <p>分子有常数项，可以用$1.$和$2.$的思路。</p>
 <p>到现在，形如$$\int \frac{ax+c}{x^2+px+q}dx$$
-的积分可以求</p>
+的积分可求</p>
 </li>
 </ol>
 <hr>
@@ -307,6 +310,63 @@ $$
 的积分可求。</p>
 </li>
 </ol>
+<h2 id="qp2的类型">q&gt;p&gt;2的类型</h2>
+<ol>
+<li>
+<p>$$\int \frac{x^2+3x+4}{x^3+3x^2+2x}dx$$
+分子和分母最高次均大于2，可以将分母为基准因式分解。</p>
+<p>分母可化为, $x(x+1)(x+2)$.
+原式化为，
+$$
+\begin{split}
+I &amp;= \int \frac{x^2+3x+4}{x(x+1)(x+2)}dx
+\
+&amp;= \int ( \frac{2}{x} - \frac{2}{x+1}+ \frac{1}{x+2})dx
+\end{split}
+$$</p>
+</li>
+<li>
+<p>$$\int \frac{x^2+3x+4}{x^3+3x^2+2x+1}dx$$</p>
+<p>此时不可以将分母为基准因式分解，分部积分与换元积分均失效。
+无法写成初等函数的形式。</p>
+</li>
+</ol>
+<h2 id="pq2的类型-1">p&gt;q=2的类型</h2>
+<ol>
+<li>
+<p>$$\int \frac{x^4}{x^2-3}dx$$
+此类可以用多项式的除法对分子进行分离。</p>
+<p>$$
+\begin{split}
+&amp;\underline{x^2+3} \
+x^2-3)&amp;x^4 \
+&amp;\underline{x^4-3x^2} \
+&amp;3x^2 \
+&amp;\underline{3x^2-9} \
+&amp;9
+\end{split}
+$$</p>
+<p>原式可以化为，
+$$
+\begin{split}
+I = \int (x^2+3) + \frac{9}{x^2+3}dx
+\end{split}
+$$</p>
+<p>因此，形如， $$\int \frac{ax^p+mx^{p-1}+\cdots +C}{x^2+bx+c}dx$$的积分可求。</p>
+</li>
+</ol>
+<h2 id="分母低次幂积型">分母低次幂积型</h2>
+<p>约定有理真分式$\frac{P(x)}{Q(x)}=\frac{P(x)}{c_0(x-a)^k(x^2+px+q)}$,（其中$k$,$l$是正整数，$p^2-4q&lt;0$）
+可唯一因式分解为有限个最简有理分式之和，即
+$$
+\frac{P(x)}{Q(x)}=\frac{A_1}{x-a}+\frac{A_2}{(x-a)^2}+\cdots+\frac{A_k}{(x-a)^k} + \frac{B_1x+D_1}{x^2+px+q}+\frac{B_2x+D_2}{x^2+px+q}+\cdots+\frac{B_lx+D_l}{x^2+px+q}
+$$
+满足上面要求，则可以用待定系数法改写成上述形式。</p>
+<p>最后，试试下面的例子。
+$$
+\int \frac{3x+6}{(x-1)^2(x^2+x+1)}dx
+$$
+相信聪明的你一定可以求出。</p>
 
     </div>
 
